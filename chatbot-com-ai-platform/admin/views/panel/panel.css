@@ -1,0 +1,110 @@
+/* PANEL */
+.panel {
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* PANEL HEADER */
+.panel-header-wrapper {
+    width: 100%;
+    border-bottom: 1px solid #dcdcdc;
+    display: flex;
+    justify-content: center;
+}
+
+.panel-header-wrapper .panel-header {
+    max-width: 1300px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin: 0 44px;
+}
+
+.panel-header-wrapper .panel-header .logo {
+    height: 23px
+}
+
+.panel-header-wrapper .panel-header .account {
+    margin-left: auto
+}
+
+.panel-header-wrapper .panel-header .account .account-logout {
+    margin-left: 25px
+}
+
+/* PANEL CONTENTENT */
+.panel .panel-content-outer-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.panel .panel-content-outer-wrapper .panel-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    width: 0;
+    padding: 10px;
+}
+
+.panel .panel-content-outer-wrapper .panel-content-wrapper .panel-content {
+    width: 100%;
+    max-width: 460px;
+}
+
+.panel .panel-content-outer-wrapper .panel-image {
+    flex-grow: 1;
+    width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.panel .panel-content-outer-wrapper .panel-image img {
+    width: 100%;
+    max-width: 562px;
+}
+
+@media (max-width: 1200px) {
+    .panel .panel-content-outer-wrapper .panel-image {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .panel-header-wrapper .panel-header {
+        margin: 0 10px;
+    }
+
+    .panel-header-wrapper .panel-header .account {
+        width: 100%;
+        display: flex;
+    }
+
+    .panel-header-wrapper .panel-header .account .account-logged {
+        display: none;
+    }
+
+    .panel-header-wrapper .panel-header .account .account-logout {
+        margin-left: auto;
+    }
+
+    .panel-header-wrapper .panel-header .logo {
+        display: none;
+    }
+
+    .panel .panel-content-outer-wrapper .panel-content-wrapper {
+        align-items: flex-start;
+        padding-top: 40px;
+    }
+}

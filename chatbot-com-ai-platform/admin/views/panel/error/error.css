@@ -1,0 +1,22 @@
+.panel-error {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+a,
+a:hover,
+a:active {
+    color: #003cff;
+}
+
+.panel-error .panel-error-image {
+    width: 160px;
+    margin-bottom: 15px;
+}
+
+.panel-error .panel-error-button {
+    display: flex;
+    margin-top: 34px;
+    margin-bottom: 26px;
+}

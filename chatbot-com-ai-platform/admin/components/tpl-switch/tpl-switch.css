@@ -1,0 +1,81 @@
+/* LABEL */
+.tpl-switch-label-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.tpl-switch-label-wrapper .tpl-switch-label-wrapper-text {
+    margin-right: 15px;
+}
+
+/* TPL-SWITCH */
+.tpl-switch-wrapper {
+    user-select: none;
+    height: 26px;
+    width: 75px;
+    display: block;
+}
+
+.tpl-switch-wrapper input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.tpl-switch {
+    height: 100%;
+    position: relative;
+    background-color: #9ba6b3;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    transition: all .3s;
+}
+
+.tpl-switch:before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: #ffffff;
+    border-radius: 100%;
+}
+
+.tpl-switch:after {
+    padding-top: 2px;
+    flex-grow: 1;
+    content: 'OFF';
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.tpl-switch-wrapper input:checked ~ .tpl-switch {
+    background-color: #006cff;
+}
+
+.tpl-switch-wrapper input:checked ~ .tpl-switch:after {
+    content: 'ON';
+    order: -1;
+}
+.tpl-switch-wrapper input:checked ~ .tpl-switch:before {
+    margin-left: auto;
+}
+
+@media (max-width: 400px) {
+    .tpl-switch-label-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .tpl-switch-label-wrapper .tpl-switch-label-wrapper-text {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+}

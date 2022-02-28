@@ -1,0 +1,16 @@
+.panel-no-stories {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-no-stories .panel-no-stories-image {
+    width: 160px;
+    margin-bottom: 15px;
+}
+
+.panel-no-stories .panel-no-stories-button {
+    display: flex;
+    margin-top: 34px;
+    margin-bottom: 26px;
+}

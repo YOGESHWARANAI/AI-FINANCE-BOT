@@ -1,0 +1,131 @@
+/* FONT FACE */
+@font-face {
+    font-family: 'Colfax';
+    src: url("../fonts/ColfaxWebRegular.woff2") format('woff2'), url("../fonts/ColfaxWebRegular.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Colfax';
+    src: url("../fonts/ColfaxWebRegularItalic.woff2") format('woff2'), url("../fonts/ColfaxWebRegularItalic.woff") format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Colfax';
+    src: url("../fonts/ColfaxWebBold.woff2") format('woff2'), url("../fonts/ColfaxWebBold.woff") format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Colfax';
+    src: url("../fonts/ColfaxWebMedium.woff2") format('woff2'), url("../fonts/ColfaxWebMedium.woff") format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* RESET WORDPRESS STYLE */
+#wpcontent {
+    padding-left: 0 !important
+}
+
+#wpbody-content {
+    padding-bottom: 0;
+}
+
+#chatbot-admin-panel-wrapper {
+    display: block;
+    width: 100%;
+    height: calc(100vh - 32px);
+    border: 0;
+    font-family: 'Colfax', sans-serif;
+}
+
+#chatbot-admin-panel-wrapper * {
+    box-sizing: border-box;
+}
+
+/* Selection */
+#chatbot-admin-panel-wrapper *::selection {
+    background: #fed103;
+}
+
+/* TEXT COLORS */
+[text-color='black'] {
+    color: #000000;
+}
+
+[text-color='grey'] {
+    color: #191919;
+}
+
+[text-color='white'] {
+    color: #ffffff;
+}
+
+/* TEXT TYPES */
+[text-type='h1'] {
+    font-size: 48px;
+    line-height: 50px;
+}
+
+[text-type='h2'] {
+    font-size: 24px;
+    line-height: 1.46;
+}
+
+[text-type='h3'] {
+    font-size: 23px;
+    line-height: 1.1;
+}
+
+[text-type='h4'] {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+[text-type='h5'] {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+[text-type='h6'] {
+    font-size: 15px;
+}
+
+[text-type='h7'] {
+    font-size: 14px;
+}
+
+/* TEXT WEIGHT */
+[text-weight='normal'] {
+    font-weight: normal;
+}
+
+[text-weight='bold'] {
+    font-weight: bold;
+}
+
+/* TEXT UNDERLINE */
+[text-underline] {
+    text-decoration: underline;
+}
+
+/* TEXT ACTIONS */
+[text-actions] {
+    -webkit-backface-visibility: hidden;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+[text-actions]:hover {
+    opacity: .8 !important
+}
+
+[text-actions]:active {
+    opacity: .5 !important
+}

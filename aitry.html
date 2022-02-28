@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ChatBot </title>
+    <style>
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height:100vh;
+    overflow: hidden;
+    position: relative;
+    background-image:url(backg.jpg);
+}
+.box{
+    width: 600px;
+    height: 350px;
+    box-shadow: 5px 5px 20px red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+.top{
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.top h1{
+    margin: 0;
+    font-size: 30px;
+    color: crimson;
+    text-align: center;
+    padding-top: 10px;
+    font-family: monospace;
+}
+.mid{
+    width: 100%;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.mid .chat{
+    width: 100%;
+}
+.mid .chat h2{
+    margin: 0;
+    font-size: 40px;
+    color: #000;
+    padding:30px 20px;
+    text-align: center;
+}
+.mid .chat p{
+    margin: 0;
+    height: 20px;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+.input{
+    height:130%;
+    width: 600px;
+    overflow: hidden;
+}
+.input input{
+    width: 100%;
+    height: 110px;
+    outline: none;
+    border: none;
+    padding-left: 30px;
+    padding-top:0;
+    font-family: serif;
+    font-size: 30px;
+    background: rgba(0, 0, 0, 0.5)t;
+}
+    </style>
+</head>
+<body>
+
+    <div class="box">
+<div style="text-align: center;" class="top">
+    <h1>Hey lets chat!!</h1>
+</div>
+<div class="mid">
+    <div class="chat">
+        <br>
+        <p id="chatLog">Let's Chat</p>
+    </div>
+</div>
+    <div class="input">
+    <input type="text" id="userBox"onkeydown="if(event.keyCode == 13){ talk() }"placeholder="Type A Message">
+    </div>
+    </div>
+
+    <script>
+function talk(){
+    var know ={
+        "hi":"Hello,nice to meet you beauty",
+        "how are you?":"Great !",
+        "bye":"Have A Nice Day !",
+        "hello":"Hi , Whats Up",
+        "what can you do":"I have money and finance details,Do you have any questions about it?",
+        "what is finance?":"Finance is a broad term that describes activities associated with banking, leverage or debt, credit, capital markets, money, and investments. Basically, finance represents money management and the process of acquiring needed funds",
+        "what is money?":"Money is a commodity accepted by general consent as a medium of economic exchange. It is the medium in which prices and values are expressed",
+        "what is your name?":"My name is AI FINANCE BOT... I'll manage your finance",
+        "what is your work?":"I can manage your finance and I can show your latest money transaction",
+        "suggest some finance videos":"https://www.youtube.com/results?search_query=financial"
+        
+    };
+    var user = document.getElementById('userBox').value;
+    document.getElementById('chatLog').innerHTML = user + "<br>";
+    if(user in know){
+        document.getElementById('chatLog').innerHTML = know[user] + "<br>";
+    }else{
+        document.getElementById('chatLog').innerHTML = "What does that mean?";
+    }
+}
+    </script>
+</body>
+</html>

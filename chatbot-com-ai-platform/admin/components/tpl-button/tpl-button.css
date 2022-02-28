@@ -1,0 +1,49 @@
+.tpl-button {
+    user-select: none;
+    border: 0;
+    background: #003cff;
+    margin-right: auto;
+    font-size: 18px;
+    border-radius: 4px;
+    color: #ffffff;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    transition: background-color .3s, opacity .3s;
+    cursor: pointer;
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+    white-space: nowrap;
+}
+
+.tpl-button:hover {
+    background: #1200b7;
+    color: #ffffff;
+}
+
+.tpl-button:active {
+    opacity: .8;
+    color: #ffffff;
+}
+
+.tpl-button:focus {
+    color: #ffffff;
+}
+
+.tpl-button img {
+    height: 14px;
+    margin-right: 18px;
+}
+
+.tpl-button[button-size='small'] {
+    font-size: 16px;
+    height: 36px;
+    line-height: 15px;
+}
+
+.tpl-button.disabled {
+    background: #919bfd;
+    cursor: progress;
+}

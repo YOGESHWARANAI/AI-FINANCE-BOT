@@ -1,0 +1,33 @@
+.panel-log-in {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-log-in .panel-log-in-button {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.panel-log-in .text-mark {
+    display: flex;
+    position: relative;
+    margin-right: auto;
+}
+
+.panel-log-in .text-mark img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -27px;
+    width: 100%;
+}
+
+.panel-log-in .panel-log-in-description {
+    margin-top: 35px;
+}
+
+.panel-log-in .panel-log-in-description span {
+    display: block;
+}
